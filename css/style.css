@@ -4,7 +4,7 @@
 }
 
 .wraper {
-  width: 442px;
+  max-width: 442px;
   height: 900px;
   border: 2px solid red;
   border-radius: 20px;
@@ -27,7 +27,7 @@ hr {
   margin: 25px;
 }
 .forms {
-  width: 132px;
+  max-width: 132px;
   margin: 0 auto;
   text-align: center;
   line-height: 2.2;
@@ -58,7 +58,7 @@ h3 {
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 .wraper-two {
-  width: 400px;
+  max-width: 400px;
   height: 700px;
   background-image: linear-gradient(to right, rgba(228, 72, 207, 0.5), rgba(16, 190, 74, 0.5)),
     url(../img/love.jpeg);
@@ -71,9 +71,10 @@ h3 {
 }
 .family {
     text-align: center;
-    color: teal;
+    color: rgb(42, 235, 25);
     padding-top: 30px;
     margin-bottom: 600px;
+    text-decoration-line: underline;
 }
 .love {
     text-align: center;
