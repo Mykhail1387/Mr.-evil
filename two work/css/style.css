@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.header {
+  background: #4d98a3;
+}
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.list-navi {
+  display: flex;
+  justify-content: space-evenly;
+  width: 550px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color:#c6cecf;
+}
+.list-navi li {
+  list-style: none;
+}
+.list-navi li::after {
+  content: "/";
+  margin: 0 25px;
+}
+li:last-child::after {
+  content: none;
+}
+.logo {
+  margin-left: 50px;
+}
+.list-navi li:hover {
+    color: red;
+    transition-duration: 300ms;
+}
+.section-one {
+  height: 480px;
+  background-image: url(../img/image-sea.jpg);
+  background-position-y: 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrap {
+  width: 520px;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 120px;
+}
+.text {
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.btn {
+  padding: 8px 45px;
+  font-size: 30px;
+  color: #b2b3b9;
+  border: 3px solid #b2b3b9;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.059);
+  margin-bottom: 80px;
+}
+.wrap p {
+  font-size: 60px;
+  
+}
+
+
