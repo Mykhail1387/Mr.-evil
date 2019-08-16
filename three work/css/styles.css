@@ -1,39 +1,348 @@
-.container {
-    max-width: 639px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 .my-header {
+  background-color: #373c3f;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-list-item {
+  display: none;
+}
+.text-six-wrap {
+  display: none;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: white;
+}
+.menu-btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #202529;
+  position: relative;
+}
+.menu-item {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 50%;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.one {
+  top: 40%;
+}
+.three {
+  top: 60%;
+}
+.menu a:hover {
+  background-color: green;
+}
+.top-tex {
+  height: 180px;
+  background-color: #16b1c4;
+  padding-top: 60px;
+  padding-left: 25px;
+  color: white;
+  font-size: 16px;
+}
+.site {
+  font-size: 14px;
+  padding-top: 15px;
+}
+.wrapper-one {
+  width: 240px;
+  height: 70px;
+  position: relative;
+}
+.arrow {
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  transform: rotate(-225deg);
+  position: absolute;
+  right: 15px;
+  bottom: -15px;
+}
+.wrapper-two {
+  background-color: #27212c;
+  display: flex;
+  justify-content: space-between;
+}
+.box-1 {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 10px;
+  padding-left: 25px;
+}
+.box-2 {
+  width: 70px;
+  height: 76px;
+  background-color: #bc3183;
+  position: relative;
+}
+.arrow-box-2 {
+  top: 45%;
+  left: 40%;
+  width: 10px;
+  height: 10px;
+  border-left: 2.5px solid white;
+  border-top: 2.5px solid white;
+  border-radius: 2px;
+}
+.wrapper-three {
+  height: 275px;
+  background-color: #5b0fa1;
+  position: relative;
+}
+.arrow-three {
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-left: 5px solid white;
+  border-top: 5px solid white;
+  border-radius: 3px;
+}
+.wrapper-four {
+  height: 277px;
+  background-image: url(../image/bridge.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrapper-five {
+  height: 279px;
+  background-image: url(../image/girl.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrapper-six {
+  height: 450px;
+  background-color: #ebebeb;
+}
+.blazrobar {
+  color: #088ca5;
+  text-decoration: none;
+  line-height: 3.2;
+}
+.blazrobar:hover {
+  color: red;
+}
+.wrap {
+  padding: 10px 0 0 25px;
+}
+.wrap p {
+  color: #515151;
+  font-size: 13.5px;
+  line-height: 1.5;
+  width: 250px;
+}
+.text-six {
+  padding-bottom: 35px;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .menu-btn {
+    width: 82px;
+    height: 75px;
+    background-color: #202529;
+  }
+  .menu-item {
+    width: 35px;
+    height: 4px;
+  }
+  .navigation {
+    font-size: 27px;
+  }
+  .top-tex {
+    height: 350px;
+    padding-top: 120px;
+    padding-left: 50px;
+    color: white;
+    font-size: 27px;
+  }
+  .site {
+    font-size: 22px;
+    padding-top: 15px;
+  }
+  .wrapper-one {
+    width: 450px;
+    height: 130px;
+  }
+  .arrow {
+    width: 10px;
+    height: 10px;
+    border-left: 3px solid white;
+    border-top: 3px solid white;
+    right: 70px;
+    bottom: 5px;
+  }
+  .box-1 {
+    height: 150px;
+    font-size: 22px;
+    padding-left: 50px;
+  }
+  .box-2 {
+    width: 145px;
+    height: 150px;
+    background-color: #bc3183;
+    position: relative;
+  }
+  .arrow-box-2 {
+    top: 45%;
+    left: 40%;
+    width: 16px;
+    height: 16px;
+    border-left: 4px solid white;
+    border-top: 4px solid white;
+    border-radius: 3px;
+  }
+  .blazrobar {
+    font-size: 30px;
+    line-height: 3.2;
+  }
+
+  .wrap {
+    padding: 45px 0 0 75px;
+  }
+  .wrap p {
+    font-size: 22px;
+    line-height: 2;
+    width: 500px;
+  }
+  .text-six {
+    padding-bottom: 35px;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .wrapper-three {
+    height: 550px;
+  }
+  .arrow-three {
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border-left: 8px solid white;
+    border-top: 8px solid white;
+    border-radius: 4px;
+  }
+  .wrapper-four {
+    height: 550px;
+  }
+  .wrapper-five {
+    height: 550px;
+  }
+  .wrapper-six {
+    height: 750px;
+  }
+}
+@media (min-width: 900px) {
+  @font-face {
+    font-family: montserrat;
+    src: url(../fonts/montserrat-v14-latin_cyrillic-regular.woff2);
+  }
+  .header-wrapper {
+    display: none;
+  }
+  .menu-list-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.navigation {
-    background-color: #373c3f;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
+    width: 540px;
+    height: 100px;
+    margin-left: 50px;
+  }
+  .menu-list-item li {
+    list-style: none;
+  }
+  .menu-list-item a {
     color: white;
-}
-.menu-btn {
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: montserrat;
+    font-weight: 400;
+  }
+  .top-tex {
+    height: 550px;
+    padding-top: 190px;
+    padding-left: 80px;
+    font-size: 38px;
+  }
+  .site {
+    font-size: 30px;
+    padding-top: 17px;
+  }
+  .wrapper-one {
+    width: 690px;
+    height: 200px;
+  }
+  .arrow {
+    width: 18px;
+    height: 18px;
+    border-left: 5px solid white;
+    border-top: 5px solid white;
+    right: 160px;
+    bottom: 25px;
+    border-radius: 5px;
+  }
+  .box-1 {
+    height: 230px;
+    font-size: 30px;
+    padding-left: 80px;
+  }
+  .box-2 {
+    width: 220px;
+    height: 230px;
+  }
+  .arrow-box-2 {
+    top: 45%;
+    left: 40%;
+    width: 24px;
+    height: 24px;
+    border-left: 6px solid white;
+    border-top: 6px solid white;
+    border-radius: 5px;
+  }
+  .wrapper-three-four-five {
+    display: flex;
+  }
+  .image {
+    width: 33.367%;
+    height: 284px;
+  }
+  .text-six-wrap {
     display: block;
-    width: 40px;
-    height: 40px;
-    background-color: #202529;
-    position: relative;
-}
-.menu-item {
-    position: absolute;
-    width: 20px;
-    height: 2px;
-    top: 50%;
-    background-color: white;
-    left: 50%;
-    transform: translateX(-50%)
-}
-.one {
-    top: 40%;
-}
-.three {
-    top: 60%;
+  }
+  .wrapper-six {
+    background-color: #ebebeb;
+    height: 760px;
+  }
+  .text-flex {
+    display: flex;
+    padding-bottom: 100px;
+  }
+  .text-six {
+    width: 370px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .text-six:not(:last-child) {
+    margin-right: 70px;
+  }
+  
 }
